@@ -1,12 +1,9 @@
 # SFTP Scheduled Task Toolset
 
-Project memory for this repo. My global conventions (PowerShell template,
-working style, publication rules) live in ~/.claude/CLAUDE.md and already
-apply here. This file only covers what is specific to THIS project.
+Project-specific rules; shared PowerShell conventions are kept outside this repo.
 
 Repo:    tobiastillstam/Sftp-Scheduled-Task-Toolset
 License: MIT (Tillnet brand)
-Status:  Released as v1.0.0, production-tested on Windows Server.
 
 ## Overview
 
@@ -67,7 +64,7 @@ for creating and editing transfer tasks in place.
 ## Commands
 
 - Lint: `Invoke-ScriptAnalyzer -Path . -Recurse`
-- Test: no Pester suite yet.
+- Test: no automated test suite in the repo.
 - Run (download task, interactive setup):
   `.\Install-SftpTask.ps1 -HostName 'sftp.example.com' -RemotePath '/outbound/' -LocalPath 'C:\Inbound' -DailyAt '03:00' -Test`
 - Run (GUI):
